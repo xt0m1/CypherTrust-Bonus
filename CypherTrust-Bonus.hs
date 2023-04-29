@@ -151,19 +151,6 @@ lastTx x y
   | x == last y = True
   | otherwise = False
 
-setVtx ::
-  T.Text
-  -> T.Text
-  -> Double
-  -> Double
-  -> Vtx
-  -> Vtx
-setVtx x y z a b =
-  set address2 x
-  (set address2 y
-   (set balance2 z
-    (set bonus2 a b)))
-
 run :: Vstack -> IO ((), Vstack)
 run = S.runStateT popTx
 
