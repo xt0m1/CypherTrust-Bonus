@@ -131,6 +131,7 @@ annonation :: Vtx -> T.Text
 annonation x
   | getAddress2 x == "0xbaed5a2e8a9c3f2daa7332a90fea69f775ba9c80" = "DAO"
   | getAddress2 x == "0xf0b0b261635d6fb19aa028e5fe30eb732c855708" = "DAO"
+  | getAddress2 x == "0xbaed5a2e8a9c3f2daa7332a90fea69f775ba9c80" = "DAO"
   | getAddress2 x == "0x9008d19f58aabd9ed0d60971565aa8510560ab41" = "GowSwap"
   | getAddress2 x == "0x65066a8b34c78b5270dacfce17e2d95ed8c6dd50" = "Execution"
   | getAddress2 x == "0xef13101c5bbd737cfb2bf00bbd38c626ad6952f7" = "Execution"
