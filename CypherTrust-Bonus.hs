@@ -154,9 +154,6 @@ lastTx x y
 run :: Vstack -> IO ((), Vstack)
 run = S.runStateT popTx
 
-push :: Vtx -> S.StateT Vstack IO ()
-push x = S.state $ \xs -> ((),x:xs)
-
 popVtx :: S.StateT Vstack IO Vtx
 popVtx = do
   (x:xs) <- S.get
